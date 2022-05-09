@@ -15,9 +15,10 @@
         <div class="container">
             <h1 id="countdown"></h1>
             <div id="buyContainer" class="buy-container" style="display: none;">
-                <img src="./images/card.gif">
-                <button id="buyNow">Buy now</button>
+                <img src="./images/card.gif" style="display: none;">
+                <button id="buyNow" onclick="buyNow();">Mint now</button>
             </div>
+            <ambition-button id="ambitionBtn" chainid="solana" contractaddress="GrRZ55EZVWJ5NtmuuC4pwJGPZ6VbKXPBezzNQShs7cDm" style="display: none;"></ambition-button>
         </div>
         <footer>
             <a href="https://www.instagram.com/bailygrains/"><img src="./images/instagram.png"></a>
@@ -26,4 +27,5 @@
         </footer>
     </body>
     <script src="./index.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/gh/ambition-so/embed-prod-build@main/bundle.v1.0.1.js"></script>
 </html>

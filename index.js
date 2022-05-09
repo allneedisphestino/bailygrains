@@ -1,6 +1,6 @@
 function countDown(){
-    let countDownDate = new Date(Date.UTC(2022, 4, 16, (14 - 2), 0, 0)).getTime();
-    //let countDownDate = new Date().getTime();
+    //let countDownDate = new Date(Date.UTC(2022, 4, 16, (14 - 2), 0, 0)).getTime();
+    let countDownDate = new Date().getTime();
             
     let x = setInterval(function() {
         let now = new Date().getTime();
@@ -19,6 +19,13 @@ function countDown(){
             document.getElementById("buyContainer").style.display = "flex";
         }
     }, 1000);
+}
+
+
+function buyNow(){
+    document.getElementById("buyContainer").style.display = "none";
+    document.getElementById("ambitionBtn").style.display = "block";
+    document.getElementById("ambitionBtn").classList.add("ambitionButton");
 }
 
 

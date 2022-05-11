@@ -20,6 +20,10 @@ body{
     justify-content: center;
 }
 
+h1{
+    margin: 0;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -127,6 +131,17 @@ button:hover{
     margin-top: 40px;
 }
 
+.mainImg{
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .mainImg{
+        width: 80%;
+    }
+}
+
 @media only screen and (max-width: 850px) {
     header{
         padding: 10px;
@@ -158,6 +173,9 @@ button:hover{
     }
     .description-container{
         margin-top: 20px;
+    }
+    .mainImg{
+        width: 90%;
     }
 }
 

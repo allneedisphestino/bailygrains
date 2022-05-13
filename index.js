@@ -23,9 +23,7 @@ function countDown(){
 
 
 function buyNow(){
-    document.getElementById("buyNow").style.display = "none";
-    document.getElementById("ambitionBtn").style.display = "block";
-    document.getElementById("ambitionBtn").classList.add("ambitionButton");
+    window.location.href = "https://solarare.com/grainers";
 }
 
 
